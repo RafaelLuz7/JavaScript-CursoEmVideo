@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos</title>
+    <style>
+        body{
+           background-color:rgb(61, 76, 216);
+           color:azure;
+           font:normal, 18pt, Arial;
+       }
+
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var bd = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[0]; // pega elementoS pelo nome da tag html,(pegando a tag p[0] ou seja o primeiro paragrafo)
+        // window.alert(p1.innerText);innerText pega o texto contido no elemento.
+        // p1.innerHtml pega a tag junto com suas tags filhos
+        var d = window.document.getElementById('msg');
+        d.style.color='red';
+        var q = window.document.querySelector('div#msg');
+        q.style.color='orange';
+        
+    </script>
+    
+</body>
+</html>
